@@ -1,0 +1,9 @@
+/Users/Yamashita/.rbenv/versions/2.2.0/bin/ruby -r ./siteconf20150508-77710-1sia2wc.rb extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+make "DESTDIR=" install
