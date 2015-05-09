@@ -1,0 +1,73 @@
+.sns-buttons {
+  list-style: none;
+  margin: 10px;
+
+  li {
+    margin: 10px;
+
+    span {
+      display: block;
+      margin: 5px;
+    }
+
+    .btn-facebook { @include button-variant($white, $facebook-official, transparent); }
+    .btn-twitter { @include button-variant($white, $twitter-official, transparent); }
+    .btn-blog { @include button-variant($white, $blog, transparent); }
+  }
+}
+
+.main-image {
+  text-align: center;
+  margin: 20px;
+}
+
+.news,
+.backnumbers {
+  padding: auto 60px;
+}
+
+.backnumbers > ul > li { list-style: none; }
+
+.department-card,
+.event-card {
+  border: solid 1px #cccccc;
+  border-radius: 8px;
+  margin: 10px 20px;
+
+  h4 { color: $nitac-official; }
+
+  .department-img {
+    @include border-left-radius(8px);
+    padding-left: 0;
+  }
+
+  .department-img-even {
+    @include border-right-radius(8px);
+    padding-right: 0;
+  }
+
+  .department-detail {
+  }
+}
+
+.actimes,
+.links {
+  list-style: none;
+  text-decoration: none;
+}
+
+.link-card {
+  border: solid 1px #cccccc;
+  border-radius: 8px;
+  margin: 10px 20px;
+
+  .link-img {
+    @include border-top-radius(8px);
+    @include square(100%);
+    display: block;
+    padding-left: 0;
+    border-bottom: solid 1px #cccccc;
+  }
+
+  a { text-decoration: none; }
+}

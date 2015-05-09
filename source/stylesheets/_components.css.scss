@@ -1,0 +1,23 @@
+button {
+  a {
+    color: $white;
+
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
+
+h2,
+h3 {
+  text-align: center;
+  color: $nitac-official;
+}
+
+section {
+  margin: 20px auto;
+}

@@ -1,0 +1,75 @@
+body {
+  background-color: $base-bg;
+  margin: 0;
+  color: #666666;
+}
+
+header,
+footer {
+  color: $white;
+  background-color: $nitac-official;
+  width: 100%;
+}
+
+header {
+  top: 0;
+  position: absolute;
+  padding: 10px;
+  height: $header-height;
+
+  .logo {
+    @include square(50%);
+    float: right;
+  }
+
+  h1 {
+    font-family: "ヒラギノ明朝 ProN","Hiragino Mincho ProN";
+    font-weight: bold;
+    margin: 10px auto;
+  }
+}
+
+footer {
+  bottom: 0;
+  position: relative;
+  height: $footer-height;
+  text-align: center;
+
+  a {
+    color: $white;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
+
+main {
+  margin-top: 100px;
+  margin-bottom: $footer-height;
+  min-height: 100%;
+
+  &:after {
+    content: "";
+    display: block;
+    height: $footer-height;
+  }
+}
+
+.navbar .nav {
+  margin: 0;
+  display: table;
+  width: 100%;
+  li {
+    display: table-cell;
+    float: none;
+
+    a { text-align: center; }
+  }
+}
