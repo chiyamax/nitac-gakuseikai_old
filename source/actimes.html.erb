@@ -3,25 +3,38 @@ title: ACTimes
 ---
 
 <h2>ACTimes</h2>
-<p class="text-center">説明が入ります 説明が入ります 説明が入ります 説明が入ります 説明が入ります</p>
+<p class="text-center">
+  学生会執行部の広報局は毎月学校の広報紙・ACTimesを発行しています。<br>
+  明石高専の様々な情報を載せているので是非ご覧ください。
+</p>
 
 <section>
   <h3>最新号</h3>
-  <ul class="actimes text-center">
-    <li><a href="#">2015年4月号 「新年度が始まりました」</a></li>
+
+  <ul class="actimes row">
+    <li class="col-md-offset-4 col-md-4">
+      <a href="<%= data.actimes.actimes.first[2][:url] %>" target="_blank">
+        <div class="card actimes-card">
+          <img src="../images/<%= data.actimes.actimes.first[3][:img] %>" class="actimes-img">
+          <%= data.actimes.actimes.first[0][:date] %>号 「<%= data.actimes.actimes.first[1][:title] %>」
+        </div>
+      </a>
+    </li>
   </ul>
 </section>
 
-<section class="text-center">
+<section>
   <h3>バックナンバー</h3>
-  <ul class="actimes">
-    <li><a href="#">2015年4月号 「新年度が始まりました」</a></li>
-    <li><a href="#">2015年4月号 「新年度が始まりました」</a></li>
-    <li><a href="#">2015年4月号 「新年度が始まりました」</a></li>
-    <li><a href="#">2015年4月号 「新年度が始まりました」</a></li>
-    <li><a href="#">2015年4月号 「新年度が始まりました」</a></li>
-    <li><a href="#">2015年4月号 「新年度が始まりました」</a></li>
-    <li><a href="#">2015年4月号 「新年度が始まりました」</a></li>
-    <li><a href="#">2015年4月号 「新年度が始まりました」</a></li>
+  <ul class="actimes row">
+    <% data.actimes.actimes.each do |actime| %>
+      <li class="col-md-4">
+        <a href="<%= actime[2][:url] %>" target="_blank">
+          <div class="card actimes-card">
+            <img src="../images/<%= actime[3][:img] %>" class="actimes-img">
+            <%= actime[0][:date] %>号 「<%= actime[1][:title] %>」
+          </div>
+        </a>
+      </li>
+    <% end %>
   </ul>
 </section>
