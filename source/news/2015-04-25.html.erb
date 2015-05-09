@@ -1,0 +1,12 @@
+---
+title: ニュース
+---
+
+<% data.news.articles.each do |article| %>
+  <% if current_path.gsub('-', '.').include?(article[0][:date]) %>
+    <article class="news">
+      <h2><%= article[1][:title] %>（<%= article[0][:date] %>）</h2>
+      <p><%= article[2][:content] %></p>
+    </article>
+  <% end %>
+<% end %>
