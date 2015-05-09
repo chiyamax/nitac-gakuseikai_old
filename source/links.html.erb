@@ -1,0 +1,43 @@
+---
+title: リンク
+---
+
+<h2>リンク</h2>
+
+<section>
+  <h3>高等専門学校</h3>
+
+  <% data.links.schools.each_slice(3).to_a.each do |threeschools| %>
+    <ul class="links row">
+      <% threeschools.each do |school| %>
+        <li class="col-md-4">
+          <a href="<%= school[1][:url] %>" target="_blank" class="links">
+            <div class="link-card">
+              <img src="../images/<%= school[2][:img] %>" class="link-img">
+              <%= school[0][:name] %>
+            </div>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+</section>
+
+<section>
+  <h3>学生会・学友会</h3>
+  <% data.links.associations.each_slice(3).to_a.each do |threeassociations| %>
+    <ul class="links row">
+      <% threeassociations.each do |association| %>
+        <li class="col-md-4">
+          <a href="<%= association[1][:url] %>" target="_blank" class="links">
+            <div class="link-card">
+              <img src="../images/<%= association[2][:img] %>" class="link-img">
+              <%= association[0][:name] %>
+            </div>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+</section>
+
