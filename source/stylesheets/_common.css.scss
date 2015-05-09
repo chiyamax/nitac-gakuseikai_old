@@ -23,7 +23,7 @@ header {
   }
 
   h1 {
-    font-family: "ヒラギノ明朝 ProN","Hiragino Mincho ProN";
+    font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
     font-weight: bold;
     margin: 10px auto;
   }
@@ -33,6 +33,7 @@ footer {
   bottom: 0;
   position: relative;
   height: $footer-height;
+  line-height: $footer-height;
   text-align: center;
 
   a {
@@ -61,6 +62,8 @@ main {
     height: $footer-height;
   }
 }
+
+li { list-style: none; }
 
 .navbar .nav {
   margin: 0;
