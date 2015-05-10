@@ -24,8 +24,10 @@ articles:
   -
     - date: 2015.04.25
     - title: お葉見に行ってきました
-    - content: たのしかった！＼(^o^)／
+    - content: |-
+        たのしかった！＼(^o^)／
   -
     - date: 2015.04.01
     - title: 新年度が始まりました
-    - content: ＼(^o^)／
+    - content: |-
+        ＼(^o^)／
