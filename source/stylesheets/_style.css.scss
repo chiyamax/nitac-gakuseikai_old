@@ -40,9 +40,13 @@
 
   h4 { color: $nitac-official; }
 
-  .department-detail { margin: 2% auto; }
+  .department-detail,
+  .character-detail {
+    margin: 2% auto;
+  }
 
-  .department-img {
+  .department-img,
+  .character-img {
     @include border-left-radius(8px);
     padding-left: 0;
   }

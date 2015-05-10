@@ -3,3 +3,17 @@ title: キャラクター
 ---
 
 <h2>明石高専のキャラクター紹介</h2>
+
+<ul class="characters">
+  <% data.characters.characters.each do |character| %>
+    <li>
+      <div class="card character-card row">
+        <img src="../images/yotsubato29.jpg" alt="" class="character-img col-md-2">
+        <div class="character-detail col-md-10">
+          <h4><%= character[0][:name] %></h4>
+          <p><%= character[1][:detail] %></p>
+        </div>
+      </div>
+    </li>
+  <% end %>
+</ul>
