@@ -1,6 +1,7 @@
 .main-image {
   text-align: center;
-  margin: 20px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .sns-buttons {
@@ -19,11 +20,6 @@
     .btn-twitter { @include button-variant($white, $twitter-official, transparent); }
     .btn-blog { @include button-variant($white, $blog, transparent); }
   }
-}
-
-.news,
-.backnumbers {
-  margin: auto 20%;
 }
 
 .actimes,
