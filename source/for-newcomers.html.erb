@@ -19,7 +19,7 @@ title: 中学生の方へ
   <% data.activities.departments.each_slice(2).to_a.each do |twodepartments| %>
     <li>
       <div class="card department-card row">
-        <img src="../images/yotsubato29.jpg" alt="" class="department-img col-md-2">
+        <img src="../images/<%= twodepartments[0][2][:image] %>" alt="" class="department-img col-md-2">
         <div class="department-detail col-md-10">
           <h4><%= twodepartments[0][0][:name] %></h4>
           <p><%= twodepartments[0][1][:detail] %></p>
@@ -32,7 +32,7 @@ title: 中学生の方へ
           <h4><%= twodepartments[1][0][:name] %></h4>
           <p><%= twodepartments[1][1][:detail] %></p>
         </div>
-        <img src="../images/yotsubato29.jpg" alt="" class="department-img-even col-md-2">
+        <img src="../images/<%= twodepartments[1][2][:image] %>" alt="" class="department-img-even col-md-2">
       </div>
     </li>
   <% end %>

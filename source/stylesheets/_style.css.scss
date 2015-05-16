@@ -49,6 +49,7 @@
   .character-img {
     @include border-left-radius(8px);
     padding-left: 0;
+    margin: 2% auto;
   }
 
   .department-img-even {
