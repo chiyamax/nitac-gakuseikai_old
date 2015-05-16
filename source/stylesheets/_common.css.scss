@@ -18,8 +18,9 @@ header {
   height: $header-height;
 
   .logo {
-    @include square(50%);
-    float: right;
+    width: 50%;
+    position: absolute;
+    right: 0;
   }
 
   h1 {
@@ -52,7 +53,7 @@ footer {
 }
 
 main {
-  margin-top: 100px;
+  margin-top: $header-height;
   margin-bottom: $footer-height;
   min-height: 100%;
 
