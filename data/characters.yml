@@ -1,5 +1,12 @@
 characters:
   -
+    - name: パンダさん
+    - detail: |-
+        学生会の公式ゆるキャラ。<br>
+        男の子。生態な謎に包まれている。<br>
+        学生会室在住。
+    - image: cha-panda.png
+  -
     - name: 物部創太
     - detail: |-
         主人公的存在。<br>
