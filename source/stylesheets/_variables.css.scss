@@ -1,17 +1,41 @@
-$nitac-official: #a14c4c;
+//// colors ////
 
+// officials //
+$nitac-official: #a14c4c;
 $facebook-official: #3b5998;
 $twitter-official: #55acee;
-$blog: #80b522;
+$blog-official: #80b522;
 
+// others //
 $white: #ffffff;
+$gray: #666666;
 
-$base-bg: $white;
 
-$navbar-default-bg: $white;
-$navbar-default-border: $nitac-official;
-$navbar-border-radius: 0;
-$navbar-height: 30px;
+//// shapes ////
+$base-radius: 4px;
 
+
+//// components ////
+
+// navbar //
+$navbar-bg: $white;
+$navbar-border-color: transparent;
+$navbar-height: 50px;
+$navbar-radius: 0;
+
+// header //
 $header-height: 90px;
+
+// footer //
 $footer-height: 50px;
+
+// button //
+$btn-radius: $base-radius;
+
+// card //
+$card-border-color: $gray;
+$card-border-radius: $base-radius;
+
+// all //
+$base-bg: $white;
+$base-color: $gray;

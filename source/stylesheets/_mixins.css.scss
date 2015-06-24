@@ -1,0 +1,35 @@
+@mixin hover($default-color, $hover-color) {
+  text-decoration: none;
+  color: $default-color;
+  &:link { color: $default-color; }
+  &:visited,
+  &:hover,
+  &:active {
+    color: $hover-color;
+  }
+}
+
+@mixin hover-color($hover-color) {
+  &:hover,
+  &:active {
+    color: $hover-color;
+  }
+}
+
+@mixin hover-bg($hover-bg) {
+  &:hover,
+  &:active {
+    background-color: $hover-bg;
+    border-color: transparent;
+  }
+}
+
+@mixin btn-original($hover-bg) {
+  // color: $gray; にしたい
+  background-color: $white;
+  border: solid 1px $gray;
+  border-radius: $base-radius;
+  @include hover-color($white);
+  @include hover-bg($hover-bg);
+
+}

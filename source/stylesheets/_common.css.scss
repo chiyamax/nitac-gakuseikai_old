@@ -1,33 +1,18 @@
 body {
   background-color: $base-bg;
+  color: $base-color;
   margin: 0;
-  color: #666666;
-}
-
-header,
-footer {
-  color: $white;
-  background-color: $nitac-official;
-  width: 100%;
 }
 
 header {
+  color: $gray;
+  width: 100%;
   top: 0;
   position: absolute;
   padding: 10px;
   height: $header-height;
 
-  a {
-    text-decoration: none;
-    color: $white;
-
-    &:link,
-    &:visited,
-    &:hover,
-    &:active {
-      color: $white;
-    }
-  }
+  a { @include hover($gray, $gray); }
 
   .logo {
     width: 50%;
@@ -43,6 +28,8 @@ header {
 }
 
 footer {
+  color: $white;
+  width: 100%;
   bottom: 0;
   position: relative;
   height: $footer-height;
@@ -50,17 +37,8 @@ footer {
   text-align: center;
 
   a {
-    color: $white;
-    text-decoration: none;
     font-weight: bold;
-
-    &:link,
-    &:visited,
-    &:hover,
-    &:active {
-      color: $white;
-      text-decoration: none;
-    }
+    @include hover($white, $white);
   }
 }
 
@@ -78,14 +56,26 @@ main {
 
 li { list-style: none; }
 
+.navbar-default {
+  background-color: $navbar-bg;
+  border-color: $navbar-border-color;
+  border-bottom: solid 10px $gray;
+  border-radius: $navbar-radius;
+}
+
 .navbar .nav {
   margin: 0;
   display: table;
   width: 100%;
+  color: $gray;
   li {
     display: table-cell;
     float: none;
+    @include hover-bg($gray);
 
-    a { text-align: center; }
+    a {
+      text-align: center;
+      @include hover-color($white);
+    }
   }
 }
