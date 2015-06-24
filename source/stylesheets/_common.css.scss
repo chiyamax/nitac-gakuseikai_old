@@ -2,6 +2,9 @@ body {
   background-color: $base-bg;
   color: $base-color;
   margin: 0;
+  font-size: $base-size;
+  line-height: $base-line-height;
+  font-family:  "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
 }
 
 header {
@@ -12,7 +15,14 @@ header {
   padding: 10px;
   height: $header-height;
 
-  a { @include hover($gray, $gray); }
+  a {
+    @include hover($gray, $gray);
+
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
 
   .logo {
     width: 50%;
@@ -28,7 +38,8 @@ header {
 }
 
 footer {
-  color: $white;
+  color: $footer-color;
+  background-color: $footer-bg;
   width: 100%;
   bottom: 0;
   position: relative;
@@ -54,28 +65,44 @@ main {
   }
 }
 
+hr {
+  border-bottom: solid 1px $gray;
+  width: 20%;
+  margin: $margin-large auto;
+}
+
 li { list-style: none; }
+
+a { text-decoration: none; }
 
 .navbar-default {
   background-color: $navbar-bg;
   border-color: $navbar-border-color;
   border-bottom: solid 10px $gray;
   border-radius: $navbar-radius;
+  margin: 0;
 }
 
 .navbar .nav {
-  margin: 0;
+  margin: auto $margin-large auto $margin-large;
   display: table;
-  width: 100%;
   color: $gray;
+
   li {
     display: table-cell;
     float: none;
+    padding: 0;
     @include hover-bg($gray);
 
     a {
       text-align: center;
       @include hover-color($white);
     }
+  }
+
+  .now {
+    border: none;
+    background-color: $gray;
+    a { @include hover($white, $white); }
   }
 }

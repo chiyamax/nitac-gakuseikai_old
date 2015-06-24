@@ -9,10 +9,21 @@ $blog-official: #80b522;
 // others //
 $white: #ffffff;
 $gray: #666666;
+$green-light: #80b552;
 
 
 //// shapes ////
 $base-radius: 4px;
+$base-size: 16px;
+$base-line-height: 200%;
+
+$margin-small: 10px;
+$margin-medium: 30px;
+$margin-large: 60px;
+
+$padding-small: 10px;
+$padding-medium: 30px;
+$padding-large: 60px;
 
 
 //// components ////
@@ -28,9 +39,13 @@ $header-height: 90px;
 
 // footer //
 $footer-height: 50px;
+$footer-color: $white;
+$footer-bg: $gray;
 
 // button //
 $btn-radius: $base-radius;
+$btn-width: 160px;
+$btn-height: 50px;
 
 // card //
 $card-border-color: $gray;

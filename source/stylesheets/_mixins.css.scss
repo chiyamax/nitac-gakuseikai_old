@@ -25,11 +25,11 @@
 }
 
 @mixin btn-original($hover-bg) {
-  // color: $gray; にしたい
+  color: $gray;
   background-color: $white;
   border: solid 1px $gray;
   border-radius: $base-radius;
-  @include hover-color($white);
   @include hover-bg($hover-bg);
-
+  @include hover-color($white);
+  @include size($btn-width, $btn-height);
 }
