@@ -15,7 +15,7 @@ departments:
     detail: 毎週月曜日に行われる学生会執行部の定例会の議事録の作成を行っています。各部活の活動内容を調べ、管理を行っています。
     image: test-img.png
   - name: 広報局
-    detail: 執行部の活動や、各行事の様子を様々なメディアを使って発信しています。<a href="<%= data.links.nitac[0][:url] %>" target="_blank"><%= data.links.nitac[0][:service] %></a>・<a href="<%= data.links.nitac[1][:url] %>" target="_blank"><%= data.links.nitac[1][:service] %></a>・<a href="<%= data.links.nitac[2][:url] %>" target="_blank"><%= data.links.nitac[2][:service] %></a>の管理や<a href="/actimes.html">ACTimes</a>の発行、また他高専との交流もしています。
+    detail: 執行部の活動や、各行事の様子を様々なメディアを使って発信しています。<a href="https://www.facebook.com/pages/%E5%9B%BD%E7%AB%8B%E6%98%8E%E7%9F%B3%E5%B7%A5%E6%A5%AD%E9%AB%98%E7%AD%89%E5%B0%82%E9%96%80%E5%AD%A6%E6%A0%A1-%E5%AD%A6%E7%94%9F%E4%BC%9A%E5%9F%B7%E8%A1%8C%E9%83%A8/439126599475812" target="_blank">Facebook</a>・<a href="https://twitter.com/act_gakuseikai" target="_blank">Twitter</a>・<a href="http://actgkai.exblog.jp/" target="_blank">ブログ</a>の管理や<a href="/actimes.html">ACTimes</a>の発行、また他高専との交流もしています。
     image: test-img.png
 
 events:
