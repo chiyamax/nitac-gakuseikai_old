@@ -56,16 +56,16 @@
 
           <div class="collapse navbar-collapse" id="navbar-toggle">
             <ul class="nav navbar-nav row">
-              <li class="col-md-3 col-sm-3"><a href="/index.html">新着情報</a></li>
-              <li class="col-md-3 col-sm-3"><a href="/for-newcomers.html">中学生の方へ</a></li>
-              <li class="col-md-3 col-sm-3"><a href="/actimes.html">ACTimes</a></li>
-              <li class="col-md-3 col-sm-3"><a href="/clubs.html">部活動</a></li>
+              <li class="col-md-3 col-sm-3 <%= "now" if current_path == 'index.html' %>"><a href="/index.html">新着情報</a></li>
+              <li class="col-md-3 col-sm-3 <%= "now" if current_path == 'for-newcomers.html' %>"><a href="/for-newcomers.html">中学生の方へ</a></li>
+              <li class="col-md-3 col-sm-3 <%= "now" if current_path == 'actimes.html' %>"><a href="/actimes.html">ACTimes</a></li>
+              <li class="col-md-3 col-sm-3 <%= "now" if current_path == 'clubs.html' %>"><a href="/clubs.html">部活動</a></li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <div class="main-image">
+      <div class="main-img">
         <img src="../images/top.png" alt="">
       </div>
 

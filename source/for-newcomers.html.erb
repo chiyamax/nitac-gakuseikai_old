@@ -21,10 +21,12 @@ title: 中学生の方へ
   <% data.activities.departments.each do |department| %>
     <li>
       <div class="card department-card row">
-        <img src="../images/<%= department[:image] %>" alt="" class="department-img col-md-2 col-sm-2">
-        <div class="department-detail col-md-10 col-sm-10">
+        <div class="department-detail col-md-8 col-sm-8">
           <h4><%= department[:name] %></h4>
           <p><%= department[:detail] %></p>
+        </div>
+        <div class="col-md-4 col-sm-4 department-img">
+          <img src="../images/<%= department[:image] %>" alt="">
         </div>
       </div>
     </li>
@@ -39,11 +41,13 @@ title: 中学生の方へ
   <% data.activities.events.each do |event| %>
     <li>
       <div class="card event-card row">
-        <div class="event-detail col-md-10 col-sm-10">
+        <div class="col-md-4 col-sm-4 event-img">
+          <img src="../images/<%= event[:image] %>" alt="">
+        </div>
+        <div class="event-detail col-md-8 col-sm-8">
           <h4><%= event[:name] %></h4>
           <p><%= event[:detail] %></p>
         </div>
-        <img src="../images/<%= event[:image] %>" alt="" class="department-img col-md-2 col-sm-2">
       </div>
     </li>
   <% end %>

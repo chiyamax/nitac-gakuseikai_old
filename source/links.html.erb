@@ -7,10 +7,10 @@ title: リンク
 <section>
   <h3>高等専門学校</h3>
 
-  <% data.links.schools.each_slice(3).to_a.each do |threeschools| %>
+  <% data.links.schools.each_slice(2).to_a.each do |threeschools| %>
     <ul class="links row">
       <% threeschools.each do |school| %>
-        <li class="col-md-4">
+        <li class="col-md-6">
           <a href="<%= school[:url] %>" target="_blank" class="links">
             <div class="card link-card">
               <img src="../images/<%= school[:img] %>" class="link-img">
@@ -25,10 +25,10 @@ title: リンク
 
 <section>
   <h3>学生会・学友会</h3>
-  <% data.links.associations.each_slice(3).to_a.each do |threeassociations| %>
+  <% data.links.associations.each_slice(2).to_a.each do |threeassociations| %>
     <ul class="links row">
       <% threeassociations.each do |association| %>
-        <li class="col-md-4">
+        <li class="col-md-6">
           <a href="<%= association[:url] %>" target="_blank" class="links">
             <div class="card link-card">
               <img src="../images/<%= association[:img] %>" class="link-img">
