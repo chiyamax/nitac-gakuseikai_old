@@ -31,6 +31,8 @@ GEM
     erubis (2.7.0)
     execjs (2.5.2)
     ffi (1.9.8)
+    font-awesome-middleman (4.2.3)
+      middleman-core (~> 3.0)
     haml (4.0.6)
       tilt
     hike (1.2.3)
@@ -125,6 +127,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  font-awesome-middleman
   middleman
   middleman-pry
   rails-assets-bootstrap-sass-official
