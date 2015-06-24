@@ -2,37 +2,26 @@
 title: 中学生の方へ
 ---
 
-<h2>中学生の方へ</h2>
-<p class="text-center">
+<p>
   学生会執行部というのは、皆さんの学校でいう生徒会のような組織です。<br>
   ただ高専の場合は先生の指示ではなく、学生主導で行事の運営といった
   学校を変え、より良くする仕事をしています。<br>
   ここでは学生会執行部の仕組み・主な仕事・運営している行事をまとめています。
 </p>
 
-<h3>局紹介</h3>
-<p class="text-center">
+<p>
   学生会執行部は6つの局に分かれています。それぞれの局がそれぞれの仕事を持っています。
 </p>
 
 <ul class="departments">
-  <% data.activities.departments.each_slice(2).to_a.each do |twodepartments| %>
+  <% data.activities.departments.each do |department| %>
     <li>
       <div class="card department-card row">
-        <img src="../images/<%= twodepartments[0][2][:image] %>" alt="" class="department-img col-md-2 col-sm-2">
+        <img src="../images/<%= department[:image] %>" alt="" class="department-img col-md-2 col-sm-2">
         <div class="department-detail col-md-10 col-sm-10">
-          <h4><%= twodepartments[0][0][:name] %></h4>
-          <p><%= twodepartments[0][1][:detail] %></p>
+          <h4><%= department[:name] %></h4>
+          <p><%= department[:detail] %></p>
         </div>
-      </div>
-    </li>
-    <li>
-      <div class="card department-card row">
-        <div class="department-detail col-md-10 col-sm-10">
-          <h4><%= twodepartments[1][0][:name] %></h4>
-          <p><%= twodepartments[1][1][:detail] %></p>
-        </div>
-        <img src="../images/<%= twodepartments[1][2][:image] %>" alt="" class="department-img-even col-md-2 col-sm-2">
       </div>
     </li>
   <% end %>
@@ -40,11 +29,16 @@ title: 中学生の方へ
 
 <h3>執行部主催の行事</h3>
 
-<% data.activities.events.each do |event| %>
-  <div class="card event-card row">
-    <div class="col-md-12">
-      <h4 class="event-name col-md-2 col-sm-2"><%= event[0][:name] %></h4>
-      <p class="event-detail col-md-10 col-sm-10"><%= event[1][:detail] %></p>
-    </div>
-  </div>
-<% end %>
+<ul class="events">
+  <% data.activities.events.each do |event| %>
+    <li>
+      <div class="card event-card row">
+        <div class="event-detail col-md-10 col-sm-10">
+          <h4><%= event[:name] %></h4>
+          <p><%= event[:detail] %></p>
+        </div>
+        <img src="../images/<%= event[:image] %>" alt="" class="department-img col-md-2 col-sm-2">
+      </div>
+    </li>
+  <% end %>
+</ul>

@@ -43,12 +43,6 @@
     </header>
 
     <main>
-      <% if current_path == 'index.html' %>
-        <div class="main-image">
-          <img src="../images/top.png" alt="">
-        </div>
-      <% end %>
-
       <nav class="navbar navbar-default">
         <div class="container">
           <div class="navbar-header">
@@ -70,6 +64,10 @@
           </div>
         </div>
       </nav>
+
+      <div class="main-image">
+        <img src="../images/top.png" alt="">
+      </div>
 
       <div class="container">
         <%= yield %>

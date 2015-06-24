@@ -7,21 +7,18 @@ title: 新着情報
     <ul class="sns-buttons">
       <li>
         <button class="btn btn-facebook">
-          <a href="https://www.facebook.com/pages/%E5%9B%BD%E7%AB%8B%E6%98%8E%E7%9F%B3%E5%B7%A5%E6%A5%AD%E9%AB%98%E7%AD%89%E5%B0%82%E9%96%80%E5%AD%A6%E6%A0%A1-%E5%AD%A6%E7%94%9F%E4%BC%9A%E5%9F%B7%E8%A1%8C%E9%83%A8/439126599475812" target="_blank"><i class="fa fa-facebook-official"></i> 学生会公式 Facebook</a>
+          <a href="https://www.facebook.com/pages/%E5%9B%BD%E7%AB%8B%E6%98%8E%E7%9F%B3%E5%B7%A5%E6%A5%AD%E9%AB%98%E7%AD%89%E5%B0%82%E9%96%80%E5%AD%A6%E6%A0%A1-%E5%AD%A6%E7%94%9F%E4%BC%9A%E5%9F%B7%E8%A1%8C%E9%83%A8/439126599475812" target="_blank"><i class="fa fa-facebook-official"></i> 公式 Facebook</a>
         </button>
-        <span>学生会のFacebookページです。「いいね！」お願いします！</span>
       </li>
       <li>
         <button class="btn btn-twitter">
-          <a href="https://twitter.com/act_gakuseikai" target="_blank"><i class="fa fa-twitter"></i> 学生会公式 Twitter</a>
+          <a href="https://twitter.com/act_gakuseikai" target="_blank"><i class="fa fa-twitter"></i> 公式 Twitter</a>
         </button>
-        <span>Twitterでも情報を配信しています。</span>
       </li>
       <li>
         <button class="btn btn-blog">
-          <a href="http://actgkai.exblog.jp/" target="_blank"><i class="fa fa-pencil-square-o"></i> 学生会公式 ブログ</a>
+          <a href="http://actgkai.exblog.jp/" target="_blank"><i class="fa fa-pencil-square-o"></i> 公式 ブログ</a>
         </button>
-        <span>執行部の雰囲気、学生の生の声をつづる執行部公式ブログです！</span>
       </li>
     </ul>
   </div>
@@ -29,9 +26,9 @@ title: 新着情報
   <div class="col-md-8 col-sm-12">
     <div class="news">
       <article>
-        <h3><%= data.news.articles.first[1][:title] %>（<%= data.news.articles.first[0][:date] %>）</h3>
-        <%= truncate(data.news.articles.first[2][:content], omission: '...', length: 300) %>
-        <a href="news/<%= data.news.articles.first[0][:date].gsub('.', '-') %>.html">続きを読む</a>
+        <h3><%= data.news.articles.first[:title] %>（<%= data.news.articles.first[:date] %>）</h3>
+        <%= truncate(data.news.articles.first[:content], omission: '...', length: 300) %>
+        <a href="news/<%= data.news.articles.first[:date].gsub('.', '-') %>.html">続きを読む</a>
       </article>
     </div>
 
@@ -40,7 +37,7 @@ title: 新着情報
       <h3>バックナンバー</h3>
       <ul>
         <% data.news.articles[1..-1].each do |article| %>
-          <li><a href="news/<%= article[0][:date].gsub('.', '-') %>.html"><%= article[0][:date] %> <%= article[1][:title] %></a></li>
+          <li><a href="news/<%= article[:date].gsub('.', '-') %>.html"><%= article[:date] %> <%= article[:title] %></a></li>
         <% end %>
       </ul>
     </div>

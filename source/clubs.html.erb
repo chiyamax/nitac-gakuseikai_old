@@ -2,8 +2,6 @@
 title: 部活動
 ---
 
-<h2>部活動</h2>
-
 <h4>運動部</h4>
 <table class="table">
   <tr>
@@ -13,36 +11,15 @@ title: 部活動
     <th>活動場所</th>
     <th>HP</th>
   </tr>
-  <tr>
-    <td>水泳部</td>
-    <td>月・火・水・木・金・土・-</td>
-    <td>
-      平日16:30～<br>
-      休日9:00～
-    </td>
-    <td>プール</td>
-    <td><a href="#">水泳部の日常</a></td>
-  </tr>
-  <tr>
-    <td>水泳部</td>
-    <td>月・火・水・木・金・土・-</td>
-    <td>
-      平日16:30～<br>
-      休日9:00～
-    </td>
-    <td>プール</td>
-    <td><a href="#">水泳部の日常</a></td>
-  </tr>
-  <tr>
-    <td>水泳部</td>
-    <td>月・火・水・木・金・土・-</td>
-    <td>
-      平日16:30～<br>
-      休日9:00～
-    </td>
-    <td>プール</td>
-    <td><a href="#">水泳部の日常</a></td>
-  </tr>
+  <% data.clubs.sport.each do |club| %>
+    <tr>
+      <td><%= club[:name] %></td>
+      <td><%= club[:activeday] %></td>
+      <td><%= club[:activetime] %></td>
+      <td><%= club[:place] %></td>
+      <td><a href="<%= club[:siteurl] %>"><%= club[:sitename] %></a></td>
+    </tr>
+  <% end %>
 </table>
 
 <h4>文化部</h4>
@@ -54,36 +31,15 @@ title: 部活動
     <th>活動場所</th>
     <th>HP</th>
   </tr>
-  <tr>
-    <td>水泳部</td>
-    <td>月・火・水・木・金・土・-</td>
-    <td>
-      平日16:30～<br>
-      休日9:00～
-    </td>
-    <td>プール</td>
-    <td><a href="#">水泳部の日常</a></td>
-  </tr>
-  <tr>
-    <td>水泳部</td>
-    <td>月・火・水・木・金・土・-</td>
-    <td>
-      平日16:30～<br>
-      休日9:00～
-    </td>
-    <td>プール</td>
-    <td><a href="#">水泳部の日常</a></td>
-  </tr>
-  <tr>
-    <td>水泳部</td>
-    <td>月・火・水・木・金・土・-</td>
-    <td>
-      平日16:30～<br>
-      休日9:00～
-    </td>
-    <td>プール</td>
-    <td><a href="#">水泳部の日常</a></td>
-  </tr>
+  <% data.clubs.culture.each do |club| %>
+    <tr>
+      <td><%= club[:name] %></td>
+      <td><%= club[:activeday] %></td>
+      <td><%= club[:activetime] %></td>
+      <td><%= club[:place] %></td>
+      <td><a href="<%= club[:siteurl] %>"><%= club[:sitename] %></a></td>
+    </tr>
+  <% end %>
 </table>
 
 <h4>同好会</h4>
@@ -95,34 +51,13 @@ title: 部活動
     <th>活動場所</th>
     <th>HP</th>
   </tr>
-  <tr>
-    <td>水泳部</td>
-    <td>月・火・水・木・金・土・-</td>
-    <td>
-      平日16:30～<br>
-      休日9:00～
-    </td>
-    <td>プール</td>
-    <td><a href="#">水泳部の日常</a></td>
-  </tr>
-  <tr>
-    <td>水泳部</td>
-    <td>月・火・水・木・金・土・-</td>
-    <td>
-      平日16:30～<br>
-      休日9:00～
-    </td>
-    <td>プール</td>
-    <td><a href="#">水泳部の日常</a></td>
-  </tr>
-  <tr>
-    <td>水泳部</td>
-    <td>月・火・水・木・金・土・-</td>
-    <td>
-      平日16:30～<br>
-      休日9:00～
-    </td>
-    <td>プール</td>
-    <td><a href="#">水泳部の日常</a></td>
-  </tr>
+  <% data.clubs.others.each do |club| %>
+    <tr>
+      <td><%= club[:name] %></td>
+      <td><%= club[:activeday] %></td>
+      <td><%= club[:activetime] %></td>
+      <td><%= club[:place] %></td>
+      <td><a href="<%= club[:siteurl] %>"><%= club[:sitename] %></a></td>
+    </tr>
+  <% end %>
 </table>

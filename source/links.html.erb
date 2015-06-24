@@ -11,10 +11,10 @@ title: リンク
     <ul class="links row">
       <% threeschools.each do |school| %>
         <li class="col-md-4">
-          <a href="<%= school[1][:url] %>" target="_blank" class="links">
+          <a href="<%= school[:url] %>" target="_blank" class="links">
             <div class="card link-card">
-              <img src="../images/<%= school[2][:img] %>" class="link-img">
-              <%= school[0][:name] %>
+              <img src="../images/<%= school[:img] %>" class="link-img">
+              <%= school[:name] %>
             </div>
           </a>
         </li>
@@ -29,10 +29,10 @@ title: リンク
     <ul class="links row">
       <% threeassociations.each do |association| %>
         <li class="col-md-4">
-          <a href="<%= association[1][:url] %>" target="_blank" class="links">
+          <a href="<%= association[:url] %>" target="_blank" class="links">
             <div class="card link-card">
-              <img src="../images/<%= association[2][:img] %>" class="link-img">
-              <%= association[0][:name] %>
+              <img src="../images/<%= association[:img] %>" class="link-img">
+              <%= association[:name] %>
             </div>
           </a>
         </li>
