@@ -28,3 +28,7 @@ articles:
     title: 新年度が始まりました
     content: |-
       ＼(^o^)／
+  - date: 2015.06.24
+    title: ほげほげ
+    content: |-
+      <code>rake generate_news[ほげほげ]</code>を使って投稿できた！！
