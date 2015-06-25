@@ -3,7 +3,7 @@ title: 新着情報
 ---
 
 <div class="row">
-  <div class="col-md-4 col-sm-12">
+  <div class="col-md-4 hidden-sm">
     <ul class="sns-buttons">
       <li>
         <a href="<%= data.links.nitac[0][:url] %>" target="_blank">
@@ -57,4 +57,26 @@ title: 新着情報
       </ul>
     </div>
   </div>
-</div>
+
+  <div class="sns-buttons-sm visible-sm col-sm-12 text-center">
+    <a href="<%= data.links.nitac[0][:url] %>" target="_blank">
+      <button class="btn btn-facebook">
+        <i class="fa fa-facebook-square fa-3x"></i>
+      </button>
+    </a>
+    <a href="<%= data.links.nitac[1][:url] %>" target="_blank">
+      <button class="btn btn-twitter fa-3x">
+        <i class="fa fa-twitter"></i>
+      </button>
+    </a>
+    <a href="<%= data.links.nitac[2][:url] %>" target="_blank">
+      <button class="btn btn-blog fa-3x">
+        <i class="fa fa-pencil-square-o"></i>
+      </button>
+    </a>
+    <a href="/links.html">
+      <button class="btn btn-blog">
+        <i class="fa fa-globe fa-3x"></i>
+      </button>
+    </a>
+  </div>

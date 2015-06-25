@@ -24,12 +24,12 @@
   }
 }
 
-@mixin btn-original($hover-bg) {
+@mixin btn-original($hover-bg, $width, $height) {
   color: $gray;
   background-color: $white;
   border: solid 1px $gray;
   border-radius: $base-radius;
   @include hover-bg($hover-bg);
   @include hover-color($white);
-  @include size($btn-width, $btn-height);
+  @include size($width, $height);
 }
