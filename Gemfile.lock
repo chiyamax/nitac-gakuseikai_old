@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/yamasy1549/font-awesome-middleman.git
+  revision: ce5b3faf6d1e99746a01c719b56f13f5cbadff7f
+  branch: update-fa-4.3.0
+  specs:
+    font-awesome-middleman (4.2.3)
+      middleman-core (~> 3.0)
+
 GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
@@ -31,8 +39,6 @@ GEM
     erubis (2.7.0)
     execjs (2.5.2)
     ffi (1.9.8)
-    font-awesome-middleman (4.2.3)
-      middleman-core (~> 3.0)
     haml (4.0.6)
       tilt
     hike (1.2.3)
@@ -127,7 +133,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  font-awesome-middleman
+  font-awesome-middleman!
   middleman
   middleman-pry
   rails-assets-bootstrap-sass-official
