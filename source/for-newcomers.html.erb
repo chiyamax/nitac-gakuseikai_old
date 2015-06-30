@@ -38,11 +38,11 @@ title: 中学生の方へ
 <h3>執行部主催の行事</h3>
 
 <ul class="events">
-  <% data.activities.events.each do |event| %>
+  <% data.activities.events.each_with_index do |event, i| %>
     <li>
-      <div class="card event-card row">
+      <div class="card event-card row" id="event-card<%= i + 1 %>">
         <div class="col-md-4 col-sm-4 event-img">
-          <img src="../images/<%= event[:image] %>" alt="">
+          <img src="../images/<%= event[:image] %>" alt="" id="event-img<%= i + 1 %>">
         </div>
         <div class="event-detail col-md-8 col-sm-8">
           <h4><%= event[:name] %></h4>
