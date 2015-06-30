@@ -6,23 +6,23 @@ title: 新着情報
   <div class="col-md-4 hidden-sm">
     <ul class="sns-buttons">
       <li>
-        <a href="<%= data.links.nitac[0][:url] %>" target="_blank">
+        <a href="<%= data.links.nitac[:facebook][:url] %>" target="_blank">
           <button class="btn btn-facebook">
-            <i class="fa fa-facebook-official"></i> 公式<%= data.links.nitac[0][:service] %>
+            <i class="fa fa-facebook-official"></i> 公式<%= data.links.nitac[:facebook][:service] %>
           </button>
         </a>
       </li>
       <li>
-        <a href="<%= data.links.nitac[1][:url] %>" target="_blank">
+        <a href="<%= data.links.nitac[:twitter][:url] %>" target="_blank">
           <button class="btn btn-twitter">
-            <i class="fa fa-twitter"></i> 公式<%= data.links.nitac[1][:service] %>
+            <i class="fa fa-twitter"></i> 公式<%= data.links.nitac[:twitter][:service] %>
           </button>
         </a>
       </li>
       <li>
-        <a href="<%= data.links.nitac[2][:url] %>" target="_blank">
+        <a href="<%= data.links.nitac[:blog][:url] %>" target="_blank">
           <button class="btn btn-blog">
-            <i class="fa fa-pencil-square-o"></i> 公式<%= data.links.nitac[2][:service] %>
+            <i class="fa fa-pencil-square-o"></i> 公式<%= data.links.nitac[:blog][:service] %>
           </button>
         </a>
       </li>
@@ -59,17 +59,17 @@ title: 新着情報
   </div>
 
   <div class="sns-buttons-sm visible-sm col-sm-12 text-center">
-    <a href="<%= data.links.nitac[0][:url] %>" target="_blank">
+    <a href="<%= data.links.nitac[:facebook][:url] %>" target="_blank">
       <button class="btn btn-facebook">
         <i class="fa fa-facebook-official fa-3x"></i>
       </button>
     </a>
-    <a href="<%= data.links.nitac[1][:url] %>" target="_blank">
+    <a href="<%= data.links.nitac[:twitter][:url] %>" target="_blank">
       <button class="btn btn-twitter fa-3x">
         <i class="fa fa-twitter"></i>
       </button>
     </a>
-    <a href="<%= data.links.nitac[2][:url] %>" target="_blank">
+    <a href="<%= data.links.nitac[:blog][:url] %>" target="_blank">
       <button class="btn btn-blog fa-3x">
         <i class="fa fa-pencil-square-o"></i>
       </button>
