@@ -1,18 +1,10 @@
-@mixin hover($default-color, $hover-color) {
+@mixin hover-color($default-color, $hover-color) {
   text-decoration: none;
   color: $default-color;
-  &:link { color: $default-color; }
-  &:visited,
   &:hover,
   &:active {
     color: $hover-color;
-  }
-}
-
-@mixin hover-color($hover-color) {
-  &:hover,
-  &:active {
-    color: $hover-color;
+    text-decoration: none;
   }
 }
 
@@ -30,6 +22,6 @@
   border: solid 1px $gray;
   border-radius: $base-radius;
   @include hover-bg($hover-bg);
-  @include hover-color($white);
+  @include hover-color($gray, $white);
   @include size($width, $height);
 }

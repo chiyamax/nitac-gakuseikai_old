@@ -16,7 +16,7 @@ header {
   height: $header-height;
 
   a {
-    @include hover($gray, $gray);
+    @include hover-color($gray, $gray);
 
     &:hover,
     &:active {
@@ -49,7 +49,7 @@ footer {
 
   a {
     font-weight: bold;
-    @include hover($white, $white);
+    @include hover-color($white, $white);
   }
 }
 
@@ -96,13 +96,13 @@ a { text-decoration: none; }
 
     a {
       text-align: center;
-      @include hover-color($white);
+      @include hover-color($gray, $white);
     }
   }
 
   .now {
     border: none;
     background-color: $gray;
-    a { @include hover($white, $white); }
+    a { @include hover-color($white, $white); }
   }
 }
